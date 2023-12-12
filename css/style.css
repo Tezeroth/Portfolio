@@ -72,7 +72,7 @@ p {
   display:grid;
 
   grid-template-columns: 20% 1fr 1fr;
-  grid-template-rows: 8% 1fr 1fr 1fr 8%;
+  grid-template-rows: 10% 1fr 1fr 1fr 8%;
   grid-template-areas: 
   'aboutaside about about'
   'workaside work work'
@@ -93,12 +93,13 @@ grid-area:1 / 1 / 2 / 2 ;
 #about{
 padding-bottom: 0%;
 grid-area:1 / 2 / 2 / 4;
-
+padding-left: 2%;
 }
+#about img{ border-radius: 100%;}
 
 #workaside{
   border-right: 5px solid black;
-background-color: antiquewhite;
+background-color: rgb(250, 248, 245);
 grid-area:2 / 1 / 5 / 2;
 z-index: 1;
 
@@ -112,61 +113,62 @@ z-index: 1;
 /*display: grid;
 justify-self: center;
 align-self: center;*/
-border-radius: 15px 50px 30px 5px;
-background-color: cornflowerblue;
+
+background-color: rgb(233, 236, 242);
 grid-area:2 / 2 / 3 / 4;
   }
 .work img {
-  border-radius: 15px 50px 30px 5px;
+
   width:100%;
   height:auto;
   max-width: 100%;
 }
 
 #work1 {
-  border-radius: 15px 50px 30px 5px;
+
   position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
-  background-color: darksalmon;
+  background-color: rgb(248, 251, 249);
 grid-area:3 / 2 / 4 / 3;
 
 
 }
 
 #work2 {
-  border-radius: 15px 50px 30px 5px;
+
   position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
- background-color: forestgreen;
+ background-color: rgb(255, 255, 255);
 grid-area:3 / 3 / 4 / 4;
 
 }
 
 #work3 {
-  border-radius: 15px 50px 30px 5px;
+ 
   position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
-background-color: mediumpurple;
+background-color: rgb(250, 248, 255);
   grid-area: 4 / 2 / 5 / 3;
 }
 
 #work4 {
-  border-radius: 15px 50px 30px 5px;
+
   position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
+  background-color: rgb(251, 247, 249);
   grid-area:4 / 3 / 5 / 4 ;
 }
   #contactaside{
-
+  color: white;
+  background-color: rgb(0, 0, 0);
   border-right: 5px solid black;
   grid-area:5 / 1 / 6 / 2;
   position: relative;
@@ -174,11 +176,11 @@ background-color: mediumpurple;
 
   align-items: center;
 
-  background-color: aqua;
+
   /* shorthand = grid-area: rowstart, colstart,rowend,colend*/
     }
     #contacticons1{
-background-color: rgb(37, 151, 35);
+background-color: rgb(0, 0, 0);
       position: relative;
       display:flex;
       justify-content: center;
@@ -187,20 +189,23 @@ background-color: rgb(37, 151, 35);
     }
     #contacticons1 a{
       padding: 20%;
+      color: white;
     }
   
   #contacticons2{
  
-
+    background-color: rgb(0, 0, 0);
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
 
   grid-area:5 / 3 / 6 / 4;
-  z-index: -1;
+
   }
   #contacticons2 a{
-    padding: 20%;
+
+      padding: 20%;
+      color: white;
   }
   /*--------------------------------------------------------*/
