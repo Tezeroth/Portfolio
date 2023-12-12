@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding:0px;
+  margin:0px;
 }
 
 body {
@@ -25,7 +27,7 @@ p {
 /*-------header and Navigation-------*/
 .header {
   display: flex;
-  justify-content: space-between;
+ /* justify-content: space-between;*/
   align-items: center;
   padding: 10px 20px;
   background-color: #333;
@@ -46,19 +48,21 @@ p {
   text-decoration: none;
   color: white;
 }
+
+
 /*------------CSS Grid Set up------------*/
 
 .page-wrapper{
-  display:grid;
+  
   justify-content:space-evenly;
   align-items:start;
-  padding: 10px 20px;
+  padding: 0px;
 }
 
 .pagesection{
 
   display:grid;
-  
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
@@ -66,56 +70,69 @@ p {
   'workaside work work'
   'workaside work work'
   'workaside work work'
-  'contactaside contact contact' ;
+  'contactaside contacticons1 contacticons2' ;
 }
 
 /* shorthand = grid-area: rowstart, colstart,rowend,colend*/
 
 #aboutaside{
-
+background-color: aqua;
 grid-area:1 / 1 / 2 / 2 ;
 
 }
 #about{
-
+background-color: aquamarine;
 grid-area:1 / 2 / 2 / 4;
 
 }
 
 #workaside{
-
+background-color: cadetblue;
 grid-area:2 / 1 / 5 / 2;
 
 
   }
   #work{
+background-color: cornflowerblue;
 grid-area:2 / 2 / 3 / 4;
-
   }
 
 #work1 {
+  background-color: darksalmon;
 grid-area:3 / 2 / 4 / 3;
 
 }
 
 #work2 {
+  background-color: forestgreen;
 grid-area:3 / 3 / 4 / 4;
 
 }
 
 #work3 {
-
+background-color: mediumpurple;
   grid-area: 4 / 2 / 5 / 3;
 }
 
+#work4 {
+background-color: tomato;
+  grid-area:4 / 3 / 5 / 4 ;
+}
   #contactaside{
+background-color: aqua;
   grid-area:5 / 1 / 6 / 2;
 
-  
+  /* shorthand = grid-area: rowstart, colstart,rowend,colend*/
     }
-    #contact{
-    grid-area:5 / 2 / 6 / 4;
+    #contacticons1{
 
- 
+
+    grid-area:5 / 2 / 6 / 3;
     }
+
+  
+  #contacticons2{
+
+  grid-area:5 / 3 / 6 / 4;
+  }
   /*--------------------------------------------------------*/
