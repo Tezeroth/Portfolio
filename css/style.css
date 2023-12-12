@@ -6,9 +6,9 @@
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
 }
 
 h1,
@@ -17,11 +17,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 10px 20px;
+  padding: 10px 20px;
 }
 
+h2{
+font-size: xx-large;
+
+}
 p {
-  margin: 10px 20px;
+  padding: 10px 30px;
 }
 
 /*-------header and Navigation-------*/
@@ -29,18 +33,20 @@ p {
   display: flex;
  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 80px;
   background-color: #333;
   color: white;
+  height: 200px;
 }
 
 .name {
-  font-size: 1.5em;
+  font-size: 3.5em;
   
 }
 
 .headernav {
   display: flex;
+  align-items: center;
 }
 
 .headernav a {
@@ -48,9 +54,10 @@ p {
   margin-left: 50px;
   text-decoration: none;
   color: white;
+  font-size: xx-large;
 }
 
-
+.hero p{color: white;}
 /*------------CSS Grid Set up------------*/
 
 .page-wrapper{
@@ -65,7 +72,7 @@ p {
   display:grid;
 
   grid-template-columns: 20% 1fr 1fr;
-  grid-template-rows: 10% 1fr 1fr 1fr 1fr 2%;
+  grid-template-rows: 10% 1fr 1fr 1fr 10%;
   grid-template-areas: 
   'aboutaside about about'
   'workaside work work'
@@ -77,19 +84,21 @@ p {
 /* shorthand = grid-area: rowstart, colstart,rowend,colend*/
 
 #aboutaside{
-background-color: aqua;
+border-right: 5px solid black;
+
 grid-area:1 / 1 / 2 / 2 ;
 
 
 }
 #about{
-background-color: aquamarine;
+padding-bottom: 0%;
 grid-area:1 / 2 / 2 / 4;
 
 }
 
 #workaside{
-background-color: cadetblue;
+  border-right: 5px solid black;
+background-color: antiquewhite;
 grid-area:2 / 1 / 5 / 2;
 z-index: 1;
 
@@ -103,17 +112,19 @@ z-index: 1;
 /*display: grid;
 justify-self: center;
 align-self: center;*/
-
+border-radius: 15px 50px 30px 5px;
 background-color: cornflowerblue;
 grid-area:2 / 2 / 3 / 4;
   }
 .work img {
+  border-radius: 15px 50px 30px 5px;
   width:100%;
   height:auto;
   max-width: 100%;
 }
 
 #work1 {
+  border-radius: 15px 50px 30px 5px;
   position: relative;
   display:flex;
   justify-content: center;
@@ -125,6 +136,7 @@ grid-area:3 / 2 / 4 / 3;
 }
 
 #work2 {
+  border-radius: 15px 50px 30px 5px;
   position: relative;
   display:flex;
   justify-content: center;
@@ -135,6 +147,7 @@ grid-area:3 / 3 / 4 / 4;
 }
 
 #work3 {
+  border-radius: 15px 50px 30px 5px;
   position: relative;
   display:flex;
   justify-content: center;
@@ -144,6 +157,7 @@ background-color: mediumpurple;
 }
 
 #work4 {
+  border-radius: 15px 50px 30px 5px;
   position: relative;
   display:flex;
   justify-content: center;
@@ -152,13 +166,19 @@ background-color: mediumpurple;
   grid-area:4 / 3 / 5 / 4 ;
 }
   #contactaside{
-  background-color: aqua;
-  grid-area:5 / 1 / 6 / 2;
 
+  border-right: 5px solid black;
+  grid-area:5 / 1 / 6 / 2;
+  position: relative;
+  display:flex;
+
+  align-items: center;
+
+  background-color: aqua;
   /* shorthand = grid-area: rowstart, colstart,rowend,colend*/
     }
     #contacticons1{
-
+background-color: rgb(37, 151, 35);
       position: relative;
       display:flex;
       justify-content: center;
