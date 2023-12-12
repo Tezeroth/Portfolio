@@ -27,7 +27,7 @@ p {
 /*-------header and Navigation-------*/
 .header {
   display: flex;
- /* justify-content: space-between;*/
+ justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #333;
@@ -44,6 +44,7 @@ p {
 }
 
 .headernav a {
+  
   margin-left: 50px;
   text-decoration: none;
   color: white;
@@ -63,8 +64,8 @@ p {
 
   display:grid;
 
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20% 1fr 1fr;
+  grid-template-rows: 10% 1fr 1fr 1fr 1fr;
   grid-template-areas: 
   'aboutaside about about'
   'workaside work work'
@@ -89,50 +90,96 @@ grid-area:1 / 2 / 2 / 4;
 #workaside{
 background-color: cadetblue;
 grid-area:2 / 1 / 5 / 2;
+z-index: 1;
 
 
   }
   #work{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+/*display: grid;
+justify-self: center;
+align-self: center;*/
+
 background-color: cornflowerblue;
 grid-area:2 / 2 / 3 / 4;
   }
+.work img {
+  width:100%;
+  height:auto;
+  max-width: 100%;
+}
 
 #work1 {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   background-color: darksalmon;
 grid-area:3 / 2 / 4 / 3;
+
 
 }
 
 #work2 {
-  background-color: forestgreen;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ background-color: forestgreen;
 grid-area:3 / 3 / 4 / 4;
 
 }
 
 #work3 {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 background-color: mediumpurple;
   grid-area: 4 / 2 / 5 / 3;
 }
 
 #work4 {
-background-color: tomato;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
   grid-area:4 / 3 / 5 / 4 ;
 }
   #contactaside{
-background-color: aqua;
+  background-color: aqua;
   grid-area:5 / 1 / 6 / 2;
 
   /* shorthand = grid-area: rowstart, colstart,rowend,colend*/
     }
     #contacticons1{
-
-
+      margin-top: -60%;
+      position: relative;
+      display:flex;
+      justify-content: center;
+      align-items: center;
     grid-area:5 / 2 / 6 / 3;
     }
-
+    #contacticons1 a{
+      padding: 20%;
+    }
   
   #contacticons2{
+ 
+    margin-top: -60%;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
   grid-area:5 / 3 / 6 / 4;
+  z-index: -1;
+  }
+  #contacticons2 a{
+    padding: 20%;
   }
   /*--------------------------------------------------------*/
